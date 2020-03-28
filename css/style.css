@@ -15,7 +15,7 @@ body {
 	background: url("../img/header/main-bg.jpg") #0A090A;
 	background-repeat: no-repeat;	
 	background-position: top center;
-	background-size: contain;
+	background-size: auto;
 }
 
 .header {
@@ -173,11 +173,16 @@ body {
 	background-color: #fff;	
 	border-radius: 3px;
 	color: #000000;
-	padding: 43px 50px;
+	padding: 3% 4%;
 }
+
+.short-info {
+	margin-right: 3%;
+}
+
 .poster {
 	display: block;
-	margin-top: -80px;
+	margin-top: -40%;
 	margin-bottom: 20px;
 }
 .button{
@@ -219,7 +224,7 @@ body {
 }
 
 .tabs-item:not(:last-child){
-	margin-right: 40px;
+	margin-right: 4%;
 }
 
 .full-content{
@@ -234,7 +239,7 @@ body {
 .tabs {
 	display: flex;
 	align-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 4%;
 }
 .text{
 	margin-top: 0px;
@@ -276,4 +281,106 @@ body {
 	border: none;
 	padding: 11px;
 	margin-bottom: 48px;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+	.tabs-item {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 740px;
+	}
+	.tabs {
+		flex-wrap: wrap;
+	}
+	.tabs-item {
+		flex-basis: 20%;
+		line-height: 2;
+	}
+	.full-content {
+		flex-wrap: wrap;
+	}
+	.tabs-content {
+		margin-bottom: 5%;
+	}
+	.text {
+		font-size: 14px;
+	}
+	.actors-list {
+		font-size: 14px;
+		line-height: 1.7;
+	}
+	.subscribe {
+		margin: auto;
+	}
+	.banner {
+		margin: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.more {
+		display: none;
+	}
+	.tabs-item{
+		flex-basis: 33%;
+	}
+	.tabs-content {
+		margin-right: 0;
+	}
+	 
+}
+
+@media (max-width: 578px) {
+	.container {
+		max-width: 90%;
+	}
+	.header{
+		flex-wrap: wrap;
+	}
+	.search {
+		flex-basis: 100%;
+		order: 3;
+		margin-top: 5%;
+	}
+	.content {
+		flex-wrap: wrap;
+	}
+	.short-info {
+		margin-bottom: 5%;
+	}
+	.actors-list, .actors-title {
+		display: none;
+	}
+	.play::before {
+		width: 4vh;
+		height: 3.5vh;
+	}
+	.movie-info {
+		flex-wrap: wrap;
+	}
+	.play {
+		margin-top: 10%;
+		flex-basis: 100%;
+	}
+	.short-info {
+		margin-right: 0;
+	}
+	.button {
+		width: 100%;
+	}
+	.poster {
+		margin-top: -20%;
+		display: inline-block;
+		width: 100%;
+	}
 }
