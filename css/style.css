@@ -43,7 +43,6 @@ body {
 	flex: 1;
 	background: rgba(196, 196, 196, 0.5);
 	border-radius: 5px;
-
 	height: 40px;
 	padding: 12px 18px;
 	border: none;
@@ -202,6 +201,7 @@ body {
 	list-style: none;
 	padding-left: 15px;
 	text-decoration: underline;
+	line-height: 150%;
 }
 
 .full-info{
@@ -211,12 +211,15 @@ body {
 .tabs-item{
 	color: black;
 	text-decoration: none;
-	margin-right: 40px;
 	font-size: 18px;
 	line-height: 21px;
 }
 .tabs-item:hover {
 	color: #ff8f27;
+}
+
+.tabs-item:not(:last-child){
+	margin-right: 40px;
 }
 
 .full-content{
@@ -228,10 +231,49 @@ body {
 	margin-right: 70px;
 }
 
+.tabs {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
 .text{
-	margin-top: 30px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 140%;
 }
 .text-title{
 	margin-top: 33px;
 	margin-bottom: 22px;
+}
+
+.subscribe-title {
+	font-weight: 900;
+	font-size: 16px;
+	margin-bottom: 14px;
+	line-height: 150%;
+	margin-top: 0;
+}
+
+.subscribe-form{
+	display: flex;
+}
+
+.subscribe-input{
+	background: rgba(196, 196, 196, 0.5);
+	border-radius: 5px 0 0 5px;
+	height: 40px;
+	padding: 12px 18px;
+	border: none;
+	color: #aeaeae;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.subscribe-button {
+	background: #FF8F27;
+	border-radius: 0px 5px 5px 0px;
+	border: none;
+	padding: 11px;
+	margin-bottom: 48px;
 }
